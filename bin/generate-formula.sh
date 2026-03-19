@@ -6,7 +6,7 @@
 
 set -euo pipefail
 
-REPO="dkam/tuber"
+REPO="tuberq/tuber"
 
 if [ -n "${1:-}" ]; then
   VERSION="$1"
