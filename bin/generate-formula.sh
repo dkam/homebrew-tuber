@@ -27,11 +27,11 @@ generate_tuber() {
 
   declare -A SHAS
 
-  echo "Downloading tuber assets for ${TAG} and computing checksums..." >&2
+  echo "Fetching tuber checksums for ${TAG}..." >&2
 
   for target in "${TARGETS[@]}"; do
     asset="tuber-${target}.tar.gz"
-    sha=$(curl -sfL "${BASE_URL}/${asset}" | shasum -a 256 | awk '{print $1}')
+    sha=$(curl -sfL "${BASE_URL}/${asset}.sha256" | awk '{print $1}')
     SHAS[$target]="$sha"
     echo "  ${asset}: ${sha}" >&2
   done
@@ -98,11 +98,11 @@ generate_tuber_tui() {
 
   declare -A SHAS
 
-  echo "Downloading tuber-tui assets for ${TAG} and computing checksums..." >&2
+  echo "Fetching tuber-tui checksums for ${TAG}..." >&2
 
   for target in "${TARGETS[@]}"; do
     asset="tuber-tui-${target}.tar.gz"
-    sha=$(curl -sfL "${BASE_URL}/${asset}" | shasum -a 256 | awk '{print $1}')
+    sha=$(curl -sfL "${BASE_URL}/${asset}.sha256" | awk '{print $1}')
     SHAS[$target]="$sha"
     echo "  ${asset}: ${sha}" >&2
   done
@@ -169,11 +169,11 @@ generate_tuber_cli() {
 
   declare -A SHAS
 
-  echo "Downloading tuber-cli assets for ${TAG} and computing checksums..." >&2
+  echo "Fetching tuber-cli checksums for ${TAG}..." >&2
 
   for target in "${TARGETS[@]}"; do
     asset="tuber-cli-${target}.tar.gz"
-    sha=$(curl -sfL "${BASE_URL}/${asset}" | shasum -a 256 | awk '{print $1}')
+    sha=$(curl -sfL "${BASE_URL}/${asset}.sha256" | awk '{print $1}')
     SHAS[$target]="$sha"
     echo "  ${asset}: ${sha}" >&2
   done
