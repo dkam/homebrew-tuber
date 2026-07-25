@@ -1,28 +1,28 @@
 class TuberTui < Formula
   desc "Terminal UI for tuber work queue"
   homepage "https://github.com/tuberq/tuber-rs"
-  version "0.10.0"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/tuberq/tuber-rs/releases/download/v0.10.0/tuber-tui-aarch64-apple-darwin.tar.gz"
-      sha256 "174c794a4d2715b86b098196aea6712aaf7880029fa60c74b20dca1d8790b85e"
+      url "https://github.com/tuberq/tuber-rs/releases/download/v0.11.0/tuber-tui-aarch64-apple-darwin.tar.gz"
+      sha256 "e28e5e491ec60bd8fd6497939598b4fc2963997e302f28b7031ed85309449894"
     end
     on_intel do
-      url "https://github.com/tuberq/tuber-rs/releases/download/v0.10.0/tuber-tui-x86_64-apple-darwin.tar.gz"
-      sha256 "9a243b5e78c32e28cf61bdabb8057e8d1eaf346c48f077dac078b478d1a09f5b"
+      url "https://github.com/tuberq/tuber-rs/releases/download/v0.11.0/tuber-tui-x86_64-apple-darwin.tar.gz"
+      sha256 "0762e2a545778ffc88af7caea3bbc93e4f638562827e6f912bbcb04d5864582c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/tuberq/tuber-rs/releases/download/v0.10.0/tuber-tui-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "d81ec3b7846133c089cb3786c529693d5b49fc9fed8961697213bf994ffaf233"
+      url "https://github.com/tuberq/tuber-rs/releases/download/v0.11.0/tuber-tui-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "ed24386b89ddb6dfad5f6a94f15022ce36fe7aa8b1571ebf5ebbeb141b8d7523"
     end
     on_intel do
-      url "https://github.com/tuberq/tuber-rs/releases/download/v0.10.0/tuber-tui-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "9bbbe8a0c25dbd9b01536c8f5102d7afef97bcea19da5b4174e7622266c48303"
+      url "https://github.com/tuberq/tuber-rs/releases/download/v0.11.0/tuber-tui-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "91ac124a0e01ad9ae1c1f7b9e8c2caa79a4d9e15801c56d41ea3c7a7217f76d2"
     end
   end
 

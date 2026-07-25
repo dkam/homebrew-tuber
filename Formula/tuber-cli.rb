@@ -1,28 +1,28 @@
 class TuberCli < Formula
   desc "CLI client for tuber work queue"
   homepage "https://github.com/tuberq/tuber-rs"
-  version "0.10.0"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/tuberq/tuber-rs/releases/download/v0.10.0/tuber-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "7e4164f9917c7ba5d7ef53d95276bb380617cc34d4ea16c34e89aed56cf10a6e"
+      url "https://github.com/tuberq/tuber-rs/releases/download/v0.11.0/tuber-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "238c65102ea588f6e9fb4d6b8847e45d20e76897d090696bb6fc38f1dd942d8a"
     end
     on_intel do
-      url "https://github.com/tuberq/tuber-rs/releases/download/v0.10.0/tuber-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "8f436865f4e31e887b28512edc7fa96b21607deb5c9c55417af23d9bcfeffa15"
+      url "https://github.com/tuberq/tuber-rs/releases/download/v0.11.0/tuber-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "fdd78d3ffd0b78236f68fb98c9f626559b9bf1633f7ea77b66c16f1835182055"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/tuberq/tuber-rs/releases/download/v0.10.0/tuber-cli-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "eefa26787206ee2685b9369e563b3d1ccd599957de51b4e2f920d0b4f79e45ea"
+      url "https://github.com/tuberq/tuber-rs/releases/download/v0.11.0/tuber-cli-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "a9099992a3ef31a03d30551acc419d6ab4242debfa16afa9037a683307246a7b"
     end
     on_intel do
-      url "https://github.com/tuberq/tuber-rs/releases/download/v0.10.0/tuber-cli-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "a16b3b1b7f1e6ead422f67a6157cc80418029cc5bd88de11552ad6aa1b7a5733"
+      url "https://github.com/tuberq/tuber-rs/releases/download/v0.11.0/tuber-cli-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "82d00ee873d2d911ce9f7cb1c8772500829cd2f1805078f90cd5b6f0e7f293bf"
     end
   end
 
